@@ -108,31 +108,6 @@ section header .toggle
     font-weight: 600;
     letter-spacing: 2px;
 }
-.sci
-{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    background: #fff;
-}
-.sci li
-{
-    list-style: none;
-}
-.sci li a
-{
-    display: inline-block;
-    transform: scale(0.8);
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 .textBlocks
 {
     position: absolute;
