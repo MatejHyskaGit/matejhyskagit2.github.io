@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Paralax Web</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Photography</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="images/bg.jpg" class="bg">
+        <img src="images/camera.png" class="camera">
+        <div class="content">
+            <h2>A guide to<br><span>Photography</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolor facere ad vel omnis, 
+            impedit magni dolore praesentium, totam blanditiis quaerat mollitia assumenda.
+            </p>
+            <a href="#">Enroll</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Enroll our course</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio fugiat esse corporis tempora, veniam blanditiis minus.
+                </p>
+            </div>
+            <div class="block">
+                <h3>Never take a bad picture again</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed tempora perspiciatis quos fugiat veniam illum expedita. 
+                Labore ratione expedita pariatur?
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.addEventListener("mousemove", function(e){
+                const bg = document.querySelector('.bg')
+                const camera = document.querySelector('.camera')
+                const content = document.querySelector('.content')
+
+                bg.style.width = 100 + e.pageX/100 +'%';
+                bg.style.height = 100 + e.pageY/100 + '%';
+
+                camera.style.right = e.pageX/2 + 'px';
+            })
+        </script>
+    </section>
+    
+</body>
+</html>
